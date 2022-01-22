@@ -1,0 +1,5 @@
+*.cf
+src/config/ConfigDumpInfo.xml
+src/config/CommonTemplates/**/*.bin
+.settings
+DT-INF
