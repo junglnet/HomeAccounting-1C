@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="562c155d-75a3-4b8a-be3e-596f5c5e96bb">
+  <producedTypes>
+    <objectType typeId="66c3db58-16a0-422f-a6aa-c272869a4ee4" valueTypeId="65282012-fe63-42d5-8d2a-d61bd949e331"/>
+    <refType typeId="47b31adf-550e-455c-a34a-9780a76c8a47" valueTypeId="83459c0a-58ff-4db1-9bf2-2b558c8289d3"/>
+    <selectionType typeId="4dcb2fb0-2e95-46cd-839c-772301317fd7" valueTypeId="cfac4516-b5f4-44a5-ad30-91b67cfbbd82"/>
+    <listType typeId="3708950d-1ba7-4b7f-bd9e-caad03f82854" valueTypeId="b361bc8e-0b7a-4e67-ba44-88bcd5823938"/>
+    <managerType typeId="e0f36c91-143d-48d4-9d54-4453397c364b" valueTypeId="89c49678-aec9-4ff6-b706-314fdfc74f56"/>
+  </producedTypes>
+  <name>Фонды</name>
+  <synonym>
+    <key>ru</key>
+    <value>Фонды</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Фонды.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.Фонды.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="c60351b8-f309-4b0f-a2b8-11323312efcb">
+      <name>ОсновнойФонд</name>
+      <description>Основной фонд</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

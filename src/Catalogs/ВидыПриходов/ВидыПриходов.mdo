@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="52e2896e-e648-4796-a055-96673cc097b4">
+  <producedTypes>
+    <objectType typeId="be70093f-9bc2-4059-a2da-7600109c60ed" valueTypeId="9b872d54-2b3f-435f-bc0a-39abf670481f"/>
+    <refType typeId="c361f670-d9c4-4bcc-beca-50a4a4597ae9" valueTypeId="33e24bc6-d307-466e-9e81-8a6cde79320a"/>
+    <selectionType typeId="c763ddb4-94fc-401f-8ff3-9d9b2604ac9b" valueTypeId="3e75cceb-d2a0-4f1d-b6a6-36eec4f750c6"/>
+    <listType typeId="b2d16cab-4182-44b0-9ac3-2ea31bd8e5ac" valueTypeId="a0910dee-88a6-4e2a-8de4-968b5a2d053e"/>
+    <managerType typeId="81eda12c-2fc2-4f26-8cfb-c872afff35e0" valueTypeId="da80f151-2619-443a-83ab-3269d41e608d"/>
+  </producedTypes>
+  <name>ВидыПриходов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды приходов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВидыПриходов.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.ВидыПриходов.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="53a97b94-c4f4-4643-a2cd-7ee1afd89834">
+      <name>ПереводИзДругогоФонда</name>
+      <description>Перевод из другого фонда</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

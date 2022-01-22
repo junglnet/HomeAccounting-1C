@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fd568314-5a62-4dd6-905e-f11e4f7da565">
+  <producedTypes>
+    <selectionType typeId="f7ee080a-967a-48f6-b763-c5ed42f84fc6" valueTypeId="692b09ff-e7ae-47f3-bd38-2f2e453487c1"/>
+    <listType typeId="6b45e4dc-03ce-40b3-822d-acfeb81ca830" valueTypeId="e5aa692d-b690-4a32-88da-9354fb082301"/>
+    <managerType typeId="ea86b89a-4a3c-45d6-a379-1ed0f87a1ff8" valueTypeId="1fe86ea6-e632-4811-a4c0-a549561fb703"/>
+    <recordSetType typeId="d96a04a0-6f1d-42aa-b739-090b6f9a6aa3" valueTypeId="d062221e-7b88-4b4b-aedd-f3ca61d27332"/>
+    <recordKeyType typeId="a87f2022-f7a3-4993-a625-d5fed4de7c17" valueTypeId="04a512b4-a1e6-4cd3-9045-38cc00bb83b7"/>
+    <recordType typeId="51ceaeca-3600-4ed4-83f3-5ee878ed1784" valueTypeId="54d67ec1-99a7-4d68-9cd6-df15d306f693"/>
+  </producedTypes>
+  <name>ДвиженияПоФондам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Движения по фондам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="a38d192e-bc03-484d-b12a-3f5d8a946ce4">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>14</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="39b5273c-a58c-486e-af45-74220631d150">
+    <name>Фонд</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фонд</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Фонды</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="0468e5fa-7399-4ef5-90f1-e374b0bb3d7f">
+    <name>Плановая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Плановая</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

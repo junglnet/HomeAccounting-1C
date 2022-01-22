@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a8b12381-047f-461e-9fab-b3c0b2668c9b">
+  <producedTypes>
+    <selectionType typeId="6ac7e16b-a207-4582-8100-a7567a365ab4" valueTypeId="cc324d7a-f17d-40f4-b74b-b548f2a1ef57"/>
+    <listType typeId="59007dff-9608-41ae-b507-444ea8c13f0b" valueTypeId="da877b1c-3a2d-4bd2-9e89-2b5bb4c40535"/>
+    <managerType typeId="3fe7e558-04c9-404d-8251-2a41e2ecbe4e" valueTypeId="4e03c26c-0dd9-4b1d-b853-10bd937db0ad"/>
+    <recordSetType typeId="da615358-50ef-4ed1-8bb8-49958b651045" valueTypeId="988d4035-3fd4-485a-939f-4a929c80c367"/>
+    <recordKeyType typeId="b4cbb2ce-2a35-4cd3-9d9a-ab8b702bb0f2" valueTypeId="f08ddba4-c300-4bef-9fbf-8e463f051a82"/>
+    <recordType typeId="239af85a-c6b0-4a92-a29b-81b8d08e07db" valueTypeId="9aa6f091-f357-4b9e-9251-d7dd635b87e1"/>
+  </producedTypes>
+  <name>БалансФондов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Баланс фондов</value>
+  </synonym>
+  <comment>Реальный баланс фонда</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="75390bfb-de20-45e1-b48a-169adf892cae">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="530071f3-a173-449f-a66a-2057e2aff9b0">
+    <name>Фонд</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фонд</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Фонды</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="26897bba-920a-41c7-a39b-f4f63fe3ebfb">
+  <producedTypes>
+    <objectType typeId="7236e254-e557-4945-b98e-a19642a930c8" valueTypeId="4291e804-97f3-4957-b989-8aa2fbb42113"/>
+    <refType typeId="eb8fb9e6-5561-49e0-8cfe-fd3c6b1b2295" valueTypeId="84e48c59-a9e4-4ec7-8830-8a0d11fd4f1f"/>
+    <selectionType typeId="23767681-6394-49cf-8c75-df0fba650d65" valueTypeId="6d043481-5b99-45a9-9a4e-e78c78d01241"/>
+    <listType typeId="2e2546d9-94de-4ae1-b1bd-55236506bec2" valueTypeId="9565ac14-0010-4808-9d2d-1ffcff737e53"/>
+    <managerType typeId="f46dd19a-19f9-4321-bd2e-40e6dffc3250" valueTypeId="8b1db466-1fef-45f1-939d-95f344f73876"/>
+  </producedTypes>
+  <name>Приход</name>
+  <synonym>
+    <key>ru</key>
+    <value>Приход</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.Приход.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <registerRecords>AccumulationRegister.БалансФондов</registerRecords>
+  <registerRecords>AccumulationRegister.ДвиженияПоФондам</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="78bca7e9-dc59-4e13-8a70-d73ea099f4a3">
+    <name>СуммаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>14</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d5bccc64-54fe-4b35-97d8-a94b73b23522">
+    <name>ВидПрихода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид прихода</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыПриходов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1dff1c26-c974-43a7-af27-bafe4770e4cb">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d240bfb5-0671-4ed6-9d6e-0cc3751109f6">
+    <name>Фонд</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фонд</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Фонды</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="529d085d-4a97-4431-a34b-1b93ba1fd90a">
+    <name>Плановая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Плановая</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8a467c39-c498-4fd6-ac84-8c6e1a4b23bd">
+    <name>ДатаОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата операции</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Document>

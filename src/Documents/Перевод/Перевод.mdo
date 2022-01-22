@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="002be30f-8662-480b-93f1-f5fb6b98878d">
+  <producedTypes>
+    <objectType typeId="91b6db36-4474-4fcd-9f65-c4d133ad4074" valueTypeId="4e0cad83-ed34-40cc-8926-e9d3c70ff9da"/>
+    <refType typeId="87ad08a3-825d-4c94-84b5-7ad5747c6aa3" valueTypeId="c41921dd-38bb-45c5-959f-757b73a037a2"/>
+    <selectionType typeId="94649817-1d72-42b4-988c-f0577190b2a7" valueTypeId="d16eef01-ec66-43c1-91f3-7f0ff6be8d56"/>
+    <listType typeId="74299a76-87d5-4b87-b5ca-9c6d5746c9d2" valueTypeId="24787504-315c-437d-85e8-9b4a4654d800"/>
+    <managerType typeId="e31df65b-3c50-448f-8a6f-b6c47b3d996e" valueTypeId="6c8127cb-bef9-42ac-be67-2a47c9b8f5ce"/>
+  </producedTypes>
+  <name>Перевод</name>
+  <synonym>
+    <key>ru</key>
+    <value>Перевод</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.Перевод.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <registerRecords>InformationRegister.ЖурналПереводов</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="8ed40ef7-29af-4550-8d26-d343336778cb">
+    <name>СуммаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>14</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8ede3702-8390-44ea-bed0-d8689c3a804d">
+    <name>ФондОтправитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фонд отправитель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Фонды</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b8e3975a-4695-4fda-b010-b7f83c72737c">
+    <name>ФондПолучатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фонд получатель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Фонды</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3b2a4533-b699-479c-ac3c-66e0d458c8a4">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Document>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="02e4b689-a8e8-4194-8bfd-6d42a0277532">
+  <producedTypes>
+    <selectionType typeId="1f08d460-a54a-4543-b63b-d99f237ac6c8" valueTypeId="fe749191-506b-460c-a552-6df6ac93c1fe"/>
+    <listType typeId="1f12246a-de15-417a-9f30-b7e36e3bedce" valueTypeId="94cca043-a24d-4188-9ad5-7704cc95ee95"/>
+    <managerType typeId="334aa9a3-1214-4461-87ba-8852b5f5b32f" valueTypeId="78efaa82-4780-4dca-b7b4-51a9c5c0c6aa"/>
+    <recordSetType typeId="04aaa470-ef6f-4dd9-b32b-a4bb3b42b3a7" valueTypeId="d67ccd6e-ec5f-4017-b121-9ac8327c1257"/>
+    <recordKeyType typeId="433aa839-640f-4b88-a43b-171e769ab895" valueTypeId="fcadbff3-19b5-4be2-8088-c46bf215c4d7"/>
+    <recordType typeId="fdf474d1-650d-45c3-ae84-a3ddee54caf7" valueTypeId="58636cc8-4dc2-428f-b3dc-98b9c6368d82"/>
+    <recordManagerType typeId="711048aa-d9ee-4c67-b8cf-b44e95f7453f" valueTypeId="2b7f03f4-2a58-443c-a80d-642567991ef6"/>
+  </producedTypes>
+  <name>ЖурналПереводов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Журнал переводов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="efe23141-c568-411e-a2fc-0d526efcb377">
+    <name>СуммаПеревода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма перевода</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>14</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="33939247-105e-4a50-8d61-a13135cec766">
+    <name>Приход</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приход</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.Приход</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="ec697ed2-4ab5-4906-a1bc-320f734f7345">
+    <name>Расход</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расход</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.Расход</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

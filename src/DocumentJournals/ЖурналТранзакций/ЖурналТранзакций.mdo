@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="531a5b4e-b62c-4352-ae83-768eff221ecd">
+  <producedTypes>
+    <selectionType typeId="60efb2ae-1f69-4759-b618-fb7ea5b5baf5" valueTypeId="28945445-319e-4414-bb7c-716800c0a0dd"/>
+    <listType typeId="317f2d1d-a07c-479e-866a-6fcb7f812bcc" valueTypeId="e6c8d7a9-dd0f-47df-bc8b-d1fe45437601"/>
+    <managerType typeId="f73cce80-52d1-48fe-8950-e67b93bc389f" valueTypeId="5418ee1a-9af8-431a-b025-d58fe856bf56"/>
+  </producedTypes>
+  <name>ЖурналТранзакций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Журнал транзакций</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.Расход</registeredDocuments>
+  <registeredDocuments>Document.Приход</registeredDocuments>
+  <columns uuid="8fb23230-5c1c-4bb8-a07b-0dc183c47f19">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <references>Document.Приход.Attribute.СуммаДокумента</references>
+    <references>Document.Расход.Attribute.СуммаДокумента</references>
+  </columns>
+  <columns uuid="0efb34d4-76a1-4d48-ad26-9eb8dc722289">
+    <name>Вид</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид</value>
+    </synonym>
+    <references>Document.Приход.Attribute.ВидПрихода</references>
+    <references>Document.Расход.Attribute.ВидРасхода</references>
+  </columns>
+  <columns uuid="73c65f4a-75b6-43b0-ba86-eadaecf1556e">
+    <name>Фонд</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фонд</value>
+    </synonym>
+    <references>Document.Приход.Attribute.Фонд</references>
+    <references>Document.Расход.Attribute.Фонд</references>
+  </columns>
+  <columns uuid="6f932338-81fe-4dc9-853d-089ba33397f9">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <references>Document.Приход.Attribute.Комментарий</references>
+    <references>Document.Расход.Attribute.Комментарий</references>
+  </columns>
+  <columns uuid="62ca664f-e15d-4227-90bf-f35b9dc81876">
+    <name>Плановая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Плановая</value>
+    </synonym>
+    <references>Document.Приход.Attribute.Плановая</references>
+    <references>Document.Расход.Attribute.Плановая</references>
+  </columns>
+</mdclass:DocumentJournal>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a9373a2d-08b1-4658-bf6e-b6aa916ca69d">
+  <name>Учет</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учет</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>StdPicture.AccumulationRegister</picture>
+  </picture>
+  <content>Catalog.Фонды</content>
+  <content>Catalog.ВидыПриходов</content>
+  <content>Document.Приход</content>
+  <content>Document.Расход</content>
+  <content>Catalog.ВидыРасходов</content>
+  <content>Document.Перевод</content>
+  <content>DocumentJournal.ЖурналТранзакций</content>
+  <content>InformationRegister.ЖурналПереводов</content>
+  <content>AccumulationRegister.БалансФондов</content>
+  <content>AccumulationRegister.ДвиженияПоФондам</content>
+</mdclass:Subsystem>

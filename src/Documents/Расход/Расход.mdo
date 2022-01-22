@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="05e86ff1-400c-4bcb-a0af-4412b56aa1b6">
+  <producedTypes>
+    <objectType typeId="0b5ef1b1-f8f5-4fe4-b68e-4b4b514180f4" valueTypeId="eedf2bda-91a9-439a-924a-11af52f2e612"/>
+    <refType typeId="437780ee-bae8-45f0-a687-1fbb5d06169e" valueTypeId="44d46332-a487-4423-af93-04b5000dbf5a"/>
+    <selectionType typeId="37610afa-908d-4eae-81e1-4bb0015f4405" valueTypeId="e56146dc-ae94-4735-b547-29559228ba89"/>
+    <listType typeId="fd45a1a1-af6f-430a-bfd4-d70cd7ab3fad" valueTypeId="035bc2c6-5176-445e-acd5-7e16247a5747"/>
+    <managerType typeId="14cc20d9-c5cf-46e8-a751-33b4f8692978" valueTypeId="bd470d34-d64a-4b5d-af44-692a9c8b53f9"/>
+  </producedTypes>
+  <name>Расход</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расход</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.Расход.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <registerRecords>AccumulationRegister.БалансФондов</registerRecords>
+  <registerRecords>AccumulationRegister.ДвиженияПоФондам</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="1d9534be-4497-4ed1-ae27-8d226156431a">
+    <name>СуммаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма документа</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>14</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3bd408c1-c7f6-414b-8684-fd215968c174">
+    <name>ВидРасхода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид расхода</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыРасходов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3dfd82c2-66a2-462e-8af0-58b8311f77e8">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="568b1d3b-89c9-4d40-9322-bd8e81ae7d58">
+    <name>Фонд</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фонд</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Фонды</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="142b556c-88b4-40f4-a59e-4c007b934e53">
+    <name>Плановая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Плановая</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a6204508-884b-4592-b943-2e707c1901e6">
+    <name>ДатаОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата операции</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Document>
